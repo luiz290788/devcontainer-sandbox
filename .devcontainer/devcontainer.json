@@ -2,7 +2,7 @@
   "name": "Node + Python + MySQL",
   "dockerComposeFile": "./docker-compose.yml",
   "service": "app",
-  "workspaceFolder": "/workspaces/devcontainer-node",
+  "workspaceFolder": "/workspaces/devcontainer-sandbox",
   "features": {
     "ghcr.io/devcontainers/features/azure-cli:1": { "version": "latest" },
     "ghcr.io/devcontainers/features/docker-in-docker:2": {

@@ -7,15 +7,13 @@ services:
     environment:
       MYSQL_ROOT_PASSWORD: r00t-password
       MYSQL_DATABASE: mydatabase
-      # MYSQL_USER: user
-      # MYSQL_PASSWORD: password
     volumes:
       - mysql-data:/var/lib/mysql
 
   app:
     image: mcr.microsoft.com/devcontainers/base:ubuntu
     volumes:
-      - ..:/workspaces/devcontainer-node
+      - ..:/workspaces/devcontainer-sandbox
     command: sleep infinity
 
     network_mode: service:db
