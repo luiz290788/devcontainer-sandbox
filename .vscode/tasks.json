@@ -1,0 +1,13 @@
+{
+	"version": "2.0.0",
+	"tasks": [
+		{
+			"type": "npm",
+			"script": "start",
+			"path": "apps/test",
+			"problemMatcher": [],
+			"label": "npm: start - apps/test",
+			"detail": "node -r ts-node/register ./src/index.ts"
+		}
+	]
+}
