@@ -1,0 +1,35 @@
+{
+  "name": "Node + Python + MySQL",
+  "dockerComposeFile": "./docker-compose.yml",
+  "service": "app",
+  "workspaceFolder": "/workspaces/devcontainer-node",
+  "features": {
+    "ghcr.io/devcontainers/features/azure-cli:1": { "version": "latest" },
+    "ghcr.io/devcontainers/features/docker-in-docker:2": {
+      "moby": true,
+      "azureDnsAutoDetection": true,
+      "installDockerBuildx": true,
+      "installDockerComposeSwitch": true,
+      "version": "latest",
+      "dockerDashComposeVersion": "latest"
+    },
+    "ghcr.io/meaningful-ooo/devcontainer-features/fish:1": {
+      "fisher": true
+    },
+    "ghcr.io/devcontainers/features/python": {
+      "version": "3.8.17"
+    },
+    "ghcr.io/devcontainers/features/node": {
+      "version": "16.13.2"
+    }
+  },
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "mtxr.sqltools",
+        "mtxr.sqltools-driver-mysql",
+        "ms-azuretools.vscode-docker"
+      ]
+    }
+  }
+}
